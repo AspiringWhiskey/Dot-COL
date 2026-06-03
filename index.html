@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="server-name">My Minecraft Server</h1>
+
+        <div class="card">
+            <p class="label">Server IP</p>
+            <p id="server-ip">Loading...</p>
+        </div>
+
+        <button onclick="copyIP()">Copy IP</button>
+    </div>
+
+    <script src="config.js"></script>
+
+    <script>
+        document.getElementById("server-name").innerText = SERVER_NAME;
+        document.getElementById("server-ip").innerText = SERVER_IP;
+
+        function copyIP() {
+            navigator.clipboard.writeText(SERVER_IP);
+            alert("Copied server IP: " + SERVER_IP);
+        }
+    </script>
+
+</body>
+</html>
