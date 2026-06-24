@@ -18,6 +18,13 @@ body {
     width: 300px;
 }
 
+#server-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
 h1 {
     margin-bottom: 25px;
 }
