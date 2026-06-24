@@ -10,6 +10,7 @@
 <body>
 
     <div class="container">
+        <img id="server-image" src="" alt="Server Banner">
         <h1 id="server-name">My Minecraft Server</h1>
 
         <div class="card">
@@ -25,6 +26,7 @@
     <script>
         document.getElementById("server-name").innerText = SERVER_NAME;
         document.getElementById("server-ip").innerText = SERVER_IP;
+        document.getElementById("server-image").src = SERVER_IMAGE;
 
         function copyIP() {
             navigator.clipboard.writeText(SERVER_IP);
